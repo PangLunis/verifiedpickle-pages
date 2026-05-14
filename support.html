@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VerifiedPickle — Support</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 24px;
+      color: #1a1a1a;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    h1 { font-size: 28px; margin-bottom: 6px; }
+    h2 { font-size: 20px; margin-top: 36px; border-bottom: 1px solid #e0e0e0; padding-bottom: 6px; }
+    h3 { font-size: 17px; margin-top: 24px; }
+    .tag { color: #666; font-size: 14px; margin-bottom: 32px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    a { color: #2173c7; }
+    .accent { color: #2173c7; }
+    .nav {
+      font-size: 14px;
+      margin-bottom: 16px;
+      color: #666;
+    }
+    .nav a { margin-right: 16px; }
+    .contact-box {
+      background: #f5f5f7;
+      border-radius: 10px;
+      padding: 24px;
+      margin-top: 32px;
+    }
+    .faq-q {
+      font-weight: 600;
+      margin-top: 20px;
+      margin-bottom: 4px;
+    }
+    .faq-a {
+      color: #444;
+      margin-top: 0;
+    }
+    code {
+      background: #f5f5f7;
+      border-radius: 4px;
+      padding: 1px 6px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="nav">
+  <a href="privacy.html">Privacy</a>
+  <a href="terms.html">Terms</a>
+  <a href="support.html">Support</a>
+</div>
+
+<h1>Support</h1>
+<p class="tag"><span class="accent">VerifiedPickle</span> · Help, FAQs, and how to report a problem</p>
+
+<h2>Quick Start</h2>
+<ol>
+  <li><strong>Open the app.</strong> When prompted, allow location access — this lets us show your position on the map and rank courts by distance. (You can deny it; the app still works, you just won't see your dot.)</li>
+  <li><strong>Browse the map.</strong> Pickleball courts in your area appear as pins. Tap any pin to see details, satellite imagery, and any community reports.</li>
+  <li><strong>Filter</strong> by type — Outdoor, Indoor, Verified Public, Free, Reservable, etc. — using the chips above the map.</li>
+  <li><strong>See a problem?</strong> Tap a court → "Report a Problem" to flag bogus, closed, or private courts so we can fix the dataset.</li>
+</ol>
+
+<h2>Frequently Asked Questions</h2>
+
+<p class="faq-q">Why don't I see any courts near me?</p>
+<p class="faq-a">VerifiedPickle ships with the OpenStreetMap-verified pickleball court dataset for the United States. If your area has no <code>sport=pickleball</code> tagged courts in OSM yet, none will appear. You can help by tagging courts on <a href="https://www.openstreetmap.org">openstreetmap.org</a> — they'll appear in a future app update.</p>
+
+<p class="faq-q">A court is shown where one doesn't exist.</p>
+<p class="faq-a">Tap the court pin, scroll down, and choose "Report a Problem" → "Not a public court" or the appropriate category. We aggregate these reports to clean up the bundled dataset.</p>
+
+<p class="faq-q">The satellite preview is centered on the wrong spot.</p>
+<p class="faq-a">VerifiedPickle uses on-device ML to re-center the satellite snapshot on the actual court surface once you tap a pin. If the pin is more than ~150 meters off the actual court, the ML may not find it — in that case the wider 275m view is shown. Reporting the pin location issue helps us improve.</p>
+
+<p class="faq-q">Does VerifiedPickle work offline?</p>
+<p class="faq-a">Yes for the bundled court dataset and your location. Map tiles and satellite imagery require an internet connection (provided by Apple MapKit).</p>
+
+<p class="faq-q">Why is the app called "VerifiedPickle"?</p>
+<p class="faq-a">Because every court shown has been cross-verified against an OpenStreetMap <code>sport=pickleball</code> polygon — not just a scraped address that might be someone's house. Roughly 16,000 unverified Pickleheads addresses are filtered out so you don't waste a trip.</p>
+
+<p class="faq-q">Is my data safe?</p>
+<p class="faq-a">Yes — VerifiedPickle has no user accounts, no advertising SDKs, no third-party analytics, and never reads your location in the background. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
+
+<p class="faq-q">Does the app work on iPad?</p>
+<p class="faq-a">Yes. Both portrait and landscape orientations are supported.</p>
+
+<p class="faq-q">How can I add a court that's missing?</p>
+<p class="faq-a">Tap the "+" button on the map (long-press where the court is located) to add a custom court locally. To get a court into the bundled dataset for all users, tag it on <a href="https://www.openstreetmap.org">openstreetmap.org</a> with <code>sport=pickleball</code> on a polygon, and it will be included in the next dataset refresh.</p>
+
+<h2>Reporting Issues</h2>
+
+<p>For bugs, feature requests, or accessibility concerns, email us with as much detail as you can:</p>
+<ul>
+  <li>iOS version and device model (Settings → General → About)</li>
+  <li>VerifiedPickle version (Settings → VerifiedPickle, or About screen inside the app)</li>
+  <li>What you were doing when the issue happened</li>
+  <li>Screenshot if relevant</li>
+</ul>
+
+<div class="contact-box">
+  <h2 style="margin-top:0; border:none; padding:0;">Contact</h2>
+  <p>For bugs, feature requests, court data issues, or any other support question:</p>
+  <p>
+    <strong>Email:</strong> <a href="mailto:rneck79@gmail.com?subject=VerifiedPickle%20Support">rneck79@gmail.com</a>
+  </p>
+  <p style="color:#666; font-size:14px; margin-bottom:0;">Response time: typically within 48 hours, always within 7 days.</p>
+</div>
+
+</body>
+</html>
